@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations Techniques - Groupe4 | Projets Académiques</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- EN-TETE -->
+    <header class="header-academique">
+        <div class="container">
+            <div class="header-identite">
+                <div class="logo-academique">
+                    <i class="fas fa-university"></i>
+                    <div class="logo-text">
+                        <h1>Groupe4</h1>
+                        <p>Réalisations Techniques</p>
+                    </div>
+                </div>
+                <div class="institution-info">
+                    <p>IUT-FV Bandjoun</p>
+                    <p>Département GTR - Niveau 3</p>
+                </div>
+            </div>
+
+            <nav class="nav-principale">
+                <ul class="nav-liste">
+                    <li><a href="index.html" class="nav-lien"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="profil.html" class="nav-lien"><i class="fas fa-users"></i> Profils</a></li>
+                    <li><a href="realisations.html" class="nav-lien actif"><i class="fas fa-project-diagram"></i> Réalisations</a></li>
+                    <li><a href="contact.html" class="nav-lien"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-burger" aria-label="Menu navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION HERO REALISATIONS -->
+        <section class="hero-realisations">
+            <div class="container">
+                <h2 class="hero-titre">Nos Réalisations Techniques</h2>
+                <p class="hero-description">Trois projets académiques majeurs démontrant notre maîtrise des technologies réseaux et sécurité</p>
+            </div>
+        </section>
+
+        <!-- PROJET 1 : HOTSPOT MIKROTIK -->
+        <section class="projet-section" id="hotspot">
+            <div class="container">
+                <div class="projet-header">
+                    <div class="projet-badge">
+                        <i class="fas fa-wifi"></i>
+                        <span>Projet 1</span>
+                    </div>
+                    <h2 class="projet-titre">Hotspot Wi-Fi avec Portail Captif</h2>
+                    <p class="projet-sous-titre">Système d'accès Internet contrôlé et sécurisé</p>
+                </div>
+
+                <div class="projet-content">
+                    <div class="projet-visuel">
+                        <div class="visuel-hotspot">
+                            <img src="images/projet-hotspot.jpg" alt="Architecture Hotspot MikroTik" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                    </div>
+
+                    <div class="projet-details">
+                        <div class="projet-description">
+                            <h3>Description du Projet</h3>
+                            <p>Conception et déploiement d'un système hotspot Wi-Fi professionnel avec portail captif personnalisé. Ce projet permet de gérer l'accès Internet d'utilisateurs via un système d'authentification flexible et une interface web personnalisée.</p>
+                            
+                            <h4>Objectifs Pédagogiques</h4>
+                            <ul class="objectifs-liste">
+                                <li>Maîtriser la configuration avancée des routeurs MikroTik</li>
+                                <li>Implémenter un système d'authentification réseau (RADIUS)</li>
+                                <li>Personnaliser une interface web de portail captif</li>
+                                <li>Gérer la qualité de service (QoS) et la bande passante</li>
+                                <li>Assurer la sécurité du réseau sans fil</li>
+                            </ul>
+                        </div>
+
+                        <div class="projet-technologies">
+                            <h3>Technologies Utilisées</h3>
+                            <div class="technologies-grid">
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-router"></i>
+                                    </div>
+                                    <h4>MikroTik RouterOS</h4>
+                                    <p>Système d'exploitation pour routeurs MikroTik</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-user-lock"></i>
+                                    </div>
+                                    <h4>Hotspot MikroTik</h4>
+                                    <p>Module de gestion d'accès Wi-Fi avec authentification</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>User Manager / RADIUS</h4>
+                                    <p>Système centralisé de gestion des utilisateurs</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <h4>TCP/IP</h4>
+                                    <p>Protocoles réseau pour la communication</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h4>HTML / CSS</h4>
+                                    <p>Personnalisation du portail captif web</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="projet-resultats">
+                            <h3>Résultats Obtenus</h3>
+                            <div class="resultats-grid">
+                                <div class="resultat-item">
+                                    <span class="resultat-chiffre">100%</span>
+                                    <p>Fonctionnalités implémentées</p>
+                                </div>
+                                <div class="resultat-item">
+                                    <span class="resultat-chiffre">&lt; 3s</span>
+                                    <p>Temps de connexion</p>
+                                </div>
+                                <div class="resultat-item">
+                                    <span class="resultat-chiffre">50+</span>
+                                    <p>Utilisateurs simultanés testés</p>
+                                </div>
+                                <div class="resultat-item">
+                                    <span class="resultat-chiffre">A</span>
+                                    <p>Évaluation académique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJET 2 : TELEPHONIE IP -->
+        <section class="projet-section bg-alternatif" id="voip">
+            <div class="container">
+                <div class="projet-header">
+                    <div class="projet-badge">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Projet 2</span>
+                    </div>
+                    <h2 class="projet-titre">Système de Téléphonie sur IP (VoIP)</h2>
+                    <p class="projet-sous-titre">Architecture de communication voix sur réseau IP</p>
+                </div>
+
+                <div class="projet-content reverse">
+                    <div class="projet-visuel">
+                        <div class="visuel-voip">
+                            <img src="images/projet-voip.jpg" alt="Architecture VoIP FreePBX" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                    </div>
+
+                    <div class="projet-details">
+                        <div class="projet-description">
+                            <h3>Description du Projet</h3>
+                            <p>Mise en place d'un système complet de téléphonie IP basé sur FreePBX/Asterisk. Ce projet intègre la voix, la vidéo et les données sur une même infrastructure réseau avec qualité de service garantie.</p>
+                            
+                            <h4>Objectifs Pédagogiques</h4>
+                            <ul class="objectifs-liste">
+                                <li>Comprendre les protocoles SIP et RTP</li>
+                                <li>Administrer un serveur FreePBX/Asterisk</li>
+                                <li>Configurer des téléphones IP et softphones</li>
+                                <li>Implémenter la qualité de service (QoS)</li>
+                                <li>Sécuriser les communications VoIP</li>
+                            </ul>
+                        </div>
+
+                        <div class="projet-technologies">
+                            <h3>Technologies Utilisées</h3>
+                            <div class="technologies-grid">
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <h4>FreePBX / Asterisk</h4>
+                                    <p>PBX open source pour téléphonie IP</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-broadcast-tower"></i>
+                                    </div>
+                                    <h4>SIP, RTP</h4>
+                                    <p>Protocoles de signalisation et transport voix</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fab fa-linux"></i>
+                                    </div>
+                                    <h4>Linux (Ubuntu Server)</h4>
+                                    <p>Système d'exploitation serveur</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <h4>Téléphones IP</h4>
+                                    <p>Matériel et logiciels clients VoIP</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <h4>Sécurité VoIP</h4>
+                                    <p>Chiffrement et authentification</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="projet-caracteristiques">
+                            <h3>Caractéristiques Implémentées</h3>
+                            <div class="caracteristiques-list">
+                                <div class="caracteristique">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>IVR (Répondeur interactif)</span>
+                                </div>
+                                <div class="caracteristique">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Transfert d'appels</span>
+                                </div>
+                                <div class="caracteristique">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Conférence à plusieurs</span>
+                                </div>
+                                <div class="caracteristique">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Messagerie vocale</span>
+                                </div>
+                                <div class="caracteristique">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Rappels d'appels</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJET 3 : BIOMETRIE -->
+        <section class="projet-section" id="biometrie">
+            <div class="container">
+                <div class="projet-header">
+                    <div class="projet-badge">
+                        <i class="fas fa-id-card"></i>
+                        <span>Projet 3</span>
+                    </div>
+                    <h2 class="projet-titre">Authentification Biométrique par Reconnaissance Faciale</h2>
+                    <p class="projet-sous-titre">Système de sécurité innovant basé sur l'intelligence artificielle</p>
+                </div>
+
+                <div class="projet-content">
+                    <div class="projet-visuel">
+                        <div class="visuel-biometrie">
+                            <img src="images/projet-biometrie.jpg" alt="Système de reconnaissance faciale" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                        </div>
+                    </div>
+
+                    <div class="projet-details">
+                        <div class="projet-description">
+                            <h3>Description du Projet</h3>
+                            <p>Développement d'un système d'authentification biométrique utilisant la reconnaissance faciale en temps réel. Cette application Python permet d'identifier et authentifier des personnes avec une haute précision grâce à des algorithmes de vision par ordinateur.</p>
+                            
+                            <h4>Objectifs Pédagogiques</h4>
+                            <ul class="objectifs-liste">
+                                <li>Maîtriser le traitement d'images avec OpenCV</li>
+                                <li>Implémenter des algorithmes de reconnaissance faciale</li>
+                                <li>Développer une application Python complète</li>
+                                <li>Gérer les bases de données d'empreintes faciales</li>
+                                <li>Assurer la sécurité des données biométriques</li>
+                            </ul>
+                        </div>
+
+                        <div class="projet-technologies">
+                            <h3>Technologies Utilisées</h3>
+                            <div class="technologies-grid">
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <h4>Python 3.9+</h4>
+                                    <p>Langage de programmation principal</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <h4>OpenCV</h4>
+                                    <p>Bibliothèque de vision par ordinateur</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-user-tag"></i>
+                                    </div>
+                                    <h4>Dlib / face_recognition</h4>
+                                    <p>Bibliothèques de reconnaissance faciale</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <h4>NumPy</h4>
+                                    <p>Calcul scientifique et manipulation de matrices</p>
+                                </div>
+
+                                <div class="technologie-item">
+                                    <div class="tech-icone">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <h4>Caméra USB/Webcam</h4>
+                                    <p>Capture vidéo en temps réel</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="projet-fonctionnalites">
+                            <h3>Fonctionnalités Principales</h3>
+                            <div class="fonctionnalites-grid">
+                                <div class="fonctionnalite">
+                                    <h4>Enregistrement</h4>
+                                    <p>Capture et stockage des visages références</p>
+                                </div>
+                                <div class="fonctionnalite">
+                                    <h4>Reconnaissance</h4>
+                                    <p>Identification en temps réel avec score de confiance</p>
+                                </div>
+                                <div class="fonctionnalite">
+                                    <h4>Anti-Fraude</h4>
+                                    <p>Détection de photos ou masques</p>
+                                </div>
+                                <div class="fonctionnalite">
+                                    <h4>Journalisation</h4>
+                                    <p>Logs détaillés des tentatives d'authentification</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION SYNTHESE -->
+        <section class="synthese-section">
+            <div class="container">
+                <h2 class="section-titre">Synthèse des Compétences Acquises</h2>
+                
+                <div class="competences-synthese">
+                    <div class="competence-categorie">
+                        <h3><i class="fas fa-network-wired"></i> Réseaux</h3>
+                        <ul>
+                            <li>Configuration avancée routeurs MikroTik</li>
+                            <li>Gestion QoS et bande passante</li>
+                            <li>Architecture TCP/IP avancée</li>
+                            <li>Sécurisation des réseaux sans fil</li>
+                        </ul>
+                    </div>
+
+                    <div class="competence-categorie">
+                        <h3><i class="fas fa-code"></i> Développement</h3>
+                        <ul>
+                            <li>Programmation Python avancée</li>
+                            <li>Traitement d'images avec OpenCV</li>
+                            <li>Développement web (HTML/CSS)</li>
+                            <li>Scripting et automatisation</li>
+                        </ul>
+                    </div>
+
+                    <div class="competence-categorie">
+                        <h3><i class="fas fa-shield-alt"></i> Sécurité</h3>
+                        <ul>
+                            <li>Authentification biométrique</li>
+                            <li>Chiffrement des communications</li>
+                            <li>Gestion des accès réseau</li>
+                            <li>Protection des données sensibles</li>
+                        </ul>
+                    </div>
+
+                    <div class="competence-categorie">
+                        <h3><i class="fas fa-project-diagram"></i> Projet</h3>
+                        <ul>
+                            <li>Gestion de projet technique</li>
+                            <li>Documentation professionnelle</li>
+                            <li>Travail d'équipe collaboratif</li>
+                            <li>Présentation des résultats</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-academique">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <h3>Groupe4 Académique</h3>
+                        <p>Portfolio de projets universitaires</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Institution :</strong> IUT-FV Bandjoun - Université de Dschang</p>
+                    <p><strong>Département :</strong> Génie des Télécommunications et Réseaux</p>
+                    <p><strong>Promotion :</strong> 2024-2025 | Niveau 3</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Profils</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 Groupe4 - Portfolio Académique. Tous droits réservés.</p>
+                <p>Les projets présentés ont été réalisés dans le cadre académique de l'IUT-FV Bandjoun.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

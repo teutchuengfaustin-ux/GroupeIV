@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Académique - GroupeIV | Communication Universitaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- EN-TETE -->
+    <header class="header-academique">
+        <div class="container">
+            <div class="header-identite">
+                <div class="logo-academique">
+                    <i class="fas fa-university"></i>
+                    <div class="logo-text">
+                        <h1>GroupeIV</h1>
+                        <p>Contact Académique</p>
+                    </div>
+                </div>
+                <div class="institution-info">
+                    <p>IUT-FV Bandjoun</p>
+                    <p>Département GTR - Niveau 3</p>
+                </div>
+            </div>
+
+            <nav class="nav-principale">
+                <ul class="nav-liste">
+                    <li><a href="index.html" class="nav-lien"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="profil.html" class="nav-lien"><i class="fas fa-users"></i> Profils</a></li>
+                    <li><a href="realisations.html" class="nav-lien"><i class="fas fa-project-diagram"></i> Réalisations</a></li>
+                    <li><a href="contact.html" class="nav-lien actif"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-burger" aria-label="Menu navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION HERO CONTACT -->
+        <section class="hero-contact">
+            <div class="container">
+                <div class="hero-contact-content">
+                    <h2 class="hero-titre">Contact Académique</h2>
+                    <p class="hero-description">Communication professionnelle dans le cadre universitaire</p>
+                    
+                    <div class="contact-message">
+                        <p>Ce site présente les travaux académiques réalisés par le GroupeIV dans le cadre de notre formation en Génie des Télécommunications et Réseaux à l'IUT-FV Bandjoun.</p>
+                        <p>Pour toute question relative à nos projets ou pour des échanges académiques, utilisez le formulaire ci-dessous ou nos coordonnées institutionnelles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT PRINCIPALE -->
+        <section class="contact-principal">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- FORMULAIRE DE CONTACT -->
+                    <div class="contact-formulaire">
+                        <h3 class="formulaire-titre">Envoyer un message</h3>
+                        <p class="formulaire-description">Remplissez ce formulaire pour nous contacter concernant nos projets académiques</p>
+                        
+                        <form id="contactForm" class="form-academique">
+                            <!-- GROUPE NOM -->
+                            <div class="form-groupe">
+                                <label for="nom" class="form-label">
+                                    <i class="fas fa-user"></i> Nom complet *
+                                </label>
+                                <input type="text" id="nom" name="nom" class="form-input" required 
+                                       placeholder="Votre nom et prénom">
+                                <div class="form-erreur" id="erreur-nom"></div>
+                            </div>
+
+                            <!-- GROUPE EMAIL -->
+                            <div class="form-groupe">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i> Adresse email *
+                                </label>
+                                <input type="email" id="email" name="email" class="form-input" required 
+                                       placeholder="exemple@domaine.com">
+                                <div class="form-erreur" id="erreur-email"></div>
+                            </div>
+
+                            <!-- GROUPE SUJET -->
+                            <div class="form-groupe">
+                                <label for="sujet" class="form-label">
+                                    <i class="fas fa-tag"></i> Sujet du message *
+                                </label>
+                                <select id="sujet" name="sujet" class="form-select" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="projets">Questions sur nos projets</option>
+                                    <option value="technique">Demandes techniques</option>
+                                    <option value="partenariat">Proposition de partenariat</option>
+                                    <option value="visite">Demande de visite académique</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                                <div class="form-erreur" id="erreur-sujet"></div>
+                            </div>
+
+                            <!-- GROUPE MESSAGE -->
+                            <div class="form-groupe">
+                                <label for="message" class="form-label">
+                                    <i class="fas fa-comment-alt"></i> Message *
+                                </label>
+                                <textarea id="message" name="message" class="form-textarea" required 
+                                          rows="6" placeholder="Votre message détaillé..."></textarea>
+                                <div class="form-erreur" id="erreur-message"></div>
+                            </div>
+
+                            <!-- CONSENTEMENT -->
+                            <div class="form-groupe consentement">
+                                <input type="checkbox" id="consentement" name="consentement" required>
+                                <label for="consentement" class="consentement-label">
+                                    Je comprends que ce formulaire sert à la communication académique et que mes données seront traitées dans ce cadre uniquement.
+                                </label>
+                            </div>
+
+                            <!-- BOUTON SOUMISSION -->
+                            <div class="form-groupe">
+                                <button type="submit" class="btn btn-primaire btn-large">
+                                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                                </button>
+                                <div class="form-success" id="success-message"></div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- INFORMATIONS DE CONTACT -->
+                    <div class="contact-informations">
+                        <h3 class="informations-titre">Coordonnées Académiques</h3>
+                        
+                        <!-- INSTITUTION -->
+                        <div class="info-card">
+                            <div class="info-icone">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Institut Universitaire de Technologie</h4>
+                                <p>IUT-FV Bandjoun</p>
+                                <p>Université de Dschang</p>
+                                <p>BP: 134 Bandjoun, Ouest-Cameroun</p>
+                            </div>
+                        </div>
+
+                        <!-- DEPARTEMENT -->
+                        <div class="info-card">
+                            <div class="info-icone">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Département GTR</h4>
+                                <p>Génie des Télécommunications et Réseaux</p>
+                                <p>LIRT- Promotion 2025/2026</p>
+                                <p>Bâtiment A, 2ème étage</p>
+                            </div>
+                        </div>
+
+                        <!-- ENCADRANT -->
+                        <div class="info-card">
+                            <div class="info-icone">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Enseignant Référent</h4>
+                                <p><strong>Ing. Blaise Fotsing NDE</strong></p>
+                                <p>Enseignant - Réseaux Avancés & Sécurité</p>
+                                <p>Email: blaise.fotsing@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- HORAIRES -->
+                        <div class="info-card">
+                            <div class="info-icone">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Disponibilités Académiques</h4>
+                                <p><strong>Période de projet :</strong> Octobre- Décembre 2025</p>
+                                <p><strong>Contact étudiants :</strong> Lundi - Vendredi, 7h30-18h50</p>
+                                <p><strong>Visites :</strong> Sur rendez-vous uniquement</p>
+                            </div>
+                        </div>
+
+                        <!-- CARTE INTERACTIVE -->
+                        <div class="carte-academique">
+                            <div class="carte-visuel">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Localisation IUT-FV Bandjoun</p>
+                            </div>
+                            <div class="carte-instructions">
+                                <h5>Comment nous trouver :</h5>
+                                <ul>
+                                    <li>Route principale Yaoundé-Bafoussam</li>
+                                    <li>Sortie Bandjoun Centre</li>
+                                    <li>Campus universitaire, bâtiment IUT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT RAPIDE -->
+        <section class="contact-rapide">
+            <div class="container">
+                <h3 class="section-titre">Contact Rapide par Spécialité</h3>
+                <p class="section-description">Contactez directement les membres selon leur domaine d'expertise</p>
+                
+                <div class="specialistes-grid">
+                    <!-- SPECIALISTE RESEAUX -->
+                    <div class="specialiste-card">
+                        <div class="specialiste-icone">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Réseaux & MikroTik</h4>
+                        <p><strong>Faustin TEUTCHUENG</strong></p>
+                        <p class="specialiste-email">teutchuengfaustin@gmail.com</p>
+                        <p class="specialiste-expertise">Configuration avancée, sécurité réseau</p>
+                    </div>
+
+                    <!-- SPECIALISTE VoIP -->
+                    <div class="specialiste-card">
+                        <div class="specialiste-icone">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Téléphonie IP (VoIP)</h4>
+                        <p><strong>AQUISLAS FONKOU</strong></p>
+                        <p class="specialiste-email">fonkouaquislas@gmail.com</p>
+                        <p class="specialiste-expertise">FreePBX, Asterisk, protocoles SIP</p>
+                    </div>
+
+                    <!-- SPECIALISTE BIOMETRIE -->
+                    <div class="specialiste-card">
+                        <div class="specialiste-icone">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h4>Maintenance Informatique</h4>
+                        <p><strong>Sophie ONANA</strong></p>
+                        <p class="specialiste-email">angeonana74@gmail.com</p>
+                        <p class="specialiste-expertise">VoIP, ToIP</p>
+                    </div>
+
+                    <!-- SPECIALISTE DESIGN -->
+                    <div class="specialiste-card">
+                        <div class="specialiste-icone">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Design & Interfaces</h4>
+                        <p><strong>Diane KAKO</strong></p>
+                        <p class="specialiste-email">dianekako08@gmail.com</p>
+                        <p class="specialiste-expertise">Développement web, portails captifs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION MENTIONS LEGALES -->
+        <section class="mentions-section">
+            <div class="container">
+                <div class="mentions-content">
+                    <h3><i class="fas fa-balance-scale"></i> Mentions Académiques</h3>
+                    
+                    <div class="mentions-grid">
+                        <div class="mention-item">
+                            <h4>Contexte Universitaire</h4>
+                            <p>Ce portfolio et les projets présentés ont été réalisés dans le cadre strictement académique de notre formation à l'IUT-FV Bandjoun, sous la supervision de l'équipe pédagogique.</p>
+                        </div>
+
+                        <div class="mention-item">
+                            <h4>Droits d'Auteur</h4>
+                            <p>Les contenus techniques, documentations et réalisations sont protégés par les droits d'auteur académiques. Toute reproduction nécessite l'autorisation des auteurs et de l'institution.</p>
+                        </div>
+
+                        <div class="mention-item">
+                            <h4>Confidentialité</h4>
+                            <p>Les données échangées via ce formulaire sont traitées dans le seul but de la communication académique et ne sont pas utilisées à des fins commerciales.</p>
+                        </div>
+
+                        <div class="mention-item">
+                            <h4>Validation Pédagogique</h4>
+                            <p>Tous les projets ont été validés par notre enseignant référent et répondent aux critères d'évaluation académique de l'IUT-FV Bandjoun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="footer-academique">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <h3>Groupe4 Académique</h3>
+                        <p>Communication Universitaire</p>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Institution :</strong> IUT-FV Bandjoun - Université de Dschang</p>
+                    <p><strong>Département :</strong> Génie des Télécommunications et Réseaux</p>
+                    <p><strong>Année académique :</strong> 2025-2026 | Semestre 5</p>
+                    <p><strong>Encadrement :</strong> Ing. Blaise Fotsing NDE</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation Rapide</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="profil.html"><i class="fas fa-users"></i> Équipe</a></li>
+                        <li><a href="realisations.html"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-reseaux">
+                    <h4>Réseaux Académiques</h4>
+                    <div class="reseaux-links">
+                        <a href="#" class="reseau-link" aria-label="LinkedIn académique">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="reseau-link" aria-label="GitHub des projets">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="reseau-link" aria-label="Email institutionnel">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="reseau-link" aria-label="Site de l'université">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 GroupeIV - Portfolio Académique. Tous droits réservés.</p>
+                <p class="copyright-mention">Projet réalisé dans le cadre universitaire - IUT-FV Bandjoun | Université de Dschang</p>
+                <p class="copyright-version">Version académique 1.0 | Dernière mise à jour : Décembre 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE CONFIRMATION -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> Message Envoyé</h3>
+                <button class="modal-close" aria-label="Fermer">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Votre message a été envoyé avec succès à l'équipe académique.</p>
+                <p>Nous vous répondrons dans les meilleurs délais universitaires.</p>
+                <div class="modal-info">
+                    <p><i class="fas fa-clock"></i> Réponse sous 3-5 jours ouvrables</p>
+                    <p><i class="fas fa-envelope"></i> Copie envoyée à votre adresse email</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primaire" id="modalOk">Compris</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
