@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- METADONNEES ACADEMIQUES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" GroupeIV">
+    <meta name="keywords" content="réseaux, sécurité, VoIP, biométrie, MikroTik, université, projet académique">
+    <meta name="author" content="GroupeIV - IUT-FV Bandjoun">
+    
+    <title>GroupeIV | IUT-FV Bandjoun</title>
+    
+    <!-- FEUILLES DE STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- POLICES ACADEMIQUES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FAVICON ACADEMIQUE -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- ============================================
+         EN-TETE ET NAVIGATION PRINCIPALE
+         ============================================ -->
+    <header class="header-academique">
+        <div class="container">
+            <!-- LOGO ET IDENTITE ACADEMIQUE -->
+            <div class="header-identite">
+                <div class="logo-academique">
+                    <i class="fas fa-university"></i>
+                    <div class="logo-text">
+                        <h1>GroupeIV</h1>
+                    </div>
+                </div>
+                <div class="institution-info">
+                    <p>IUT-FV Bandjoun</p>
+                    <p>Département GTR - LIRT</p>
+                </div>
+            </div>
+
+            <!-- MENU DE NAVIGATION -->
+            <nav class="nav-principale">
+                <ul class="nav-liste">
+                    <li><a href="index.html" class="nav-lien actif"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="profil.html" class="nav-lien"><i class="fas fa-users"></i> Profils</a></li>
+                    <li><a href="realisations.html" class="nav-lien"><i class="fas fa-project-diagram"></i>Nos Réalisations</a></li>
+                    <li><a href="contact.html" class="nav-lien"><i class="fas fa-envelope"></i> Contacts</a></li>
+                </ul>
+            </nav>
+
+            <!-- MENU BURGER (MOBILE) -->
+            <button class="menu-burger" aria-label="Menu navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================
+         SECTION HERO - PRESENTATION DU PROJET
+         ============================================ -->
+    <main>
+        <section class="hero-academique">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-titre">Innovation Technologique & Excellence Académique</h2>
+                        <p class="hero-sous-titre">Projet intégrateur en Génie des Télécommunications et Réseaux</p>
+                        <div class="hero-description">
+                            <p>Le <strong>GroupeIV</strong> Nous présentons nos profils académique ainsi que nos projets majeurs réalisés dans le cadre de notre formation à l'IUT-FV de Bandjoun. Notre travail illustre l'acquisition de compétences techniques avancées en nuvelles technlogies.<br>   Tous ceci sous l'encardremet technique et académique de nombreux experts.</p>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="profil.html" class="btn btn-primaire">Découvrir l'équipe</a>
+                            <a href="realisations.html" class="btn btn-secondaire">Voir nos projets</a>
+                        </div>
+                    </div>
+                    <div class="hero-visuel">
+                        <div class="visuel-container">
+                            <i class="fas fa-network-wired"></i>
+                            <div class="visuel-ondes">
+                                <div class="onde onde-1"></div>
+                                <div class="onde onde-2"></div>
+                                <div class="onde onde-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION DOMAINES TECHNIQUES
+             ============================================ -->
+        <section class="domaines-section">
+            <div class="container">
+                <h2 class="section-titre">Domaines Techniques Maîtrisés</h2>
+                <p class="section-description">Notre formation couvre quatre domaines fondamentaux des technologies  modernes</p>
+                
+                <div class="domaines-grid">
+                    <!-- Domaine 1 : Réseaux -->
+                    <article class="domaine-card">
+                        <div class="domaine-icone">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Réseaux Informatiques</h3>
+                        <ul class="domaine-liste">
+                            <li>Architecture réseau TCP/IP</li>
+                            <li>Configuration routeurs/switches</li>
+                            <li>Réseaux locaux (LAN/WLAN)</li>
+                            <li>Virtualisation réseau</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domaine 2 : Sécurité -->
+                    <article class="domaine-card">
+                        <div class="domaine-icone">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sécurité Réseau</h3>
+                        <ul class="domaine-liste">
+                            <li>Authentification et autorisation</li>
+                            <li>Détection d'intrusion</li>
+                        </ul>
+                    </article>
+
+                    <!-- Domaine 3 : Téléphonie IP -->
+                    <article class="domaine-card">
+                        <div class="domaine-icone">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h3>Téléphonie IP (VoIP)</h3>
+                        <ul class="domaine-liste">
+                            <li>Architecture SIP/RTP</li>
+                            <li>Serveurs FreePBX/Asterisk</li>
+                            <li>Qualité de Service (QoS)</li>
+                        
+                        </ul>
+                    </article>
+
+                    <!-- Domaine 4 : Biométrie -->
+                    <article class="domaine-card">
+                        <div class="domaine-icone">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Systèmes Biométriques</h3>
+                        <ul class="domaine-liste">
+                            <li>Reconnaissance faciale</li>
+                            <li>Traitement d'images avec OpenCV</li>
+                            <li>Algorithmes d'apprentissage</li>
+                            <li>Sécurité des données biométriques</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION PROJET PERSONNEL - BIOMETRIE
+             ============================================ -->
+        <section class="projet-biometrie">
+            <div class="container">
+                <div class="projet-header">
+                    <h2 class="section-titre">Projet Personnel : Authentification Biométrique</h2>
+                    <p class="section-description">Système de sécurité innovant par reconnaissance faciale</p>
+                </div>
+                
+                <div class="projet-content">
+                    <div class="projet-description">
+                        <h3>Contexte et Objectifs</h3>
+                        <p>Dans le cadre de notre spécialisation en sécurité informatique, nous avons développé un système d'authentification biométrique par reconnaissance faciale. Ce projet personnel vise à :</p>
+                        
+                        <ul class="projet-objectifs">
+                            <li><strong>Sécuriser l'accès</strong> à des ressources sensibles par identification unique</li>
+                            <li><strong>Éliminer les faiblesses</strong> des systèmes d'authentification traditionnels</li>
+                            <li><strong>Implémenter des algorithmes</strong> de vision par ordinateur en temps réel</li>
+                            <li><strong>Concevoir une solution</strong> scalable et adaptable à divers contextes</li>
+                        </ul>
+
+                        <div class="projet-technologies">
+                            <h4>Stack Technologique</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python 3.9+</span>
+                                <span class="tech-tag">OpenCV 4.5+</span>
+                                <span class="tech-tag"> face_recognition</span>
+                                <span class="tech-tag">NumPy / SciPy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="projet-visuel">
+                        <div class="visuel-biometrie">
+                            <div class="biometrie-element">
+                                <i class="fas fa-camera"></i>
+                                <p>Capture</p>
+                            </div>
+                            <div class="biometrie-fleche">→</div>
+                            <div class="biometrie-element">
+                                <i class="fas fa-brain"></i>
+                                <p>Traitement IA</p>
+                            </div>
+                            <div class="biometrie-fleche">→</div>
+                            <div class="biometrie-element">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Authentification</p>
+                            </div>
+                        </div>
+                        <p class="visuel-legende">Processus d'authentification biométrique en 3 étapes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION ENCADREMENT ACADEMIQUE
+             ============================================ -->
+        <section class="encadrement-section">
+            <div class="container">
+                <h2 class="section-titre">Encadrement Académique</h2>
+                <p class="section-description">Sous la supervision d'une équipe pédagogique expérimentée</p>
+                
+                <div class="encadrement-grid">
+                    <div class="encadrement-card">
+                        <div class="encadrement-role">
+                            <i class="fas fa-user-tie"></i>
+                            <h3>Direction</h3>
+                        </div>
+                        <p><strong>Prof. René TCHINDA</strong></p>
+                        <p>Directeur de l'IUT-FV Bandjoun</p>
+                    </div>
+
+                    <div class="encadrement-card">
+                        <div class="encadrement-role">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h3>Département</h3>
+                        </div>
+                        <p><strong>Prof. KAPCHE TAGNE FRANÇOIS</strong></p>
+                        <p>Chef du Département GTR</p>
+                    </div>
+
+                    <div class="encadrement-card">
+                        <div class="encadrement-role">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>LIRT</h3>
+                        </div>
+                        <p><strong>Dr. CHIME ALEX</strong></p>
+                        <p>Responsable de niveau</p>
+                    </div>
+
+                    <div class="encadrement-card">
+                        <div class="encadrement-role">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Enseignement</h3>
+                        </div>
+                        <p><strong>Ing. Blaise Fotsing NDE</strong></p>
+                        <p>Enseignant à l'IUT-FV-bandjoun</p>
+                    </div>
+                </div>
+                
+                <div class="encadrement-cta">
+                    <a href="profil.html#encadrement" class="btn btn-primaire">
+                        Voir tous les encadrants <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         PIED DE PAGE ACADEMIQUE
+         ============================================ -->
+    <footer class="footer-academique">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <h3>GroupeIV</h3>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Institution :</strong> IUT-FV Bandjoun - Université de Dschang</p>
+                    <p><strong>Département :</strong> Génie des Télécommunications et Réseaux</p>
+                    <p><strong>Promotion :</strong> 2025-2026 | LIRT</p>
+                    <p><strong>Encadrant :</strong> Ing. Blaise Fotsing NDE</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profil.html">Profils</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 Groupe4 -  Tous droits réservés.</p>
+                <p>Ce site a été réalisé dans le cadre d'un projet universitaire. Les contenus sont protégés par les droits d'auteur académiques.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCRIPTS JAVASCRIPT
+         ============================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
